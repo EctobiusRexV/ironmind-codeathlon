@@ -1,7 +1,7 @@
 import mariadb
 from fastapi import APIRouter
 
-from src.item import Item
+from .item import Item, ProgramItem, SexeItem
 
 router = APIRouter()
 sql_connection = mariadb.connect(host='db', port=3306, user="username", password="password", database="database")

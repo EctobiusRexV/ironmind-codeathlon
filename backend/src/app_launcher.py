@@ -2,8 +2,11 @@ import uvicorn
 from fastapi import FastAPI
 from starlette.middleware.cors import CORSMiddleware
 
-from src.item_route import router as item_router
-from src.health_route import router as health_router
+from .item_route import router as item_router
+from .health_route import router as health_router
+from .program_route import router as program_router
+from .sexe_route import router as sexe_router
+from .events import eventsRouter
 
 
 def launch():
@@ -24,5 +27,8 @@ def __setup_app() -> FastAPI:
 
     app.include_router(item_router)
     app.include_router(health_router)
+    app.include_router(program_router)
+    app.include_router(sexe_router)
+    app.include_router(eventsRouter)
 
     return app
