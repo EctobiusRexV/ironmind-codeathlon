@@ -76,6 +76,12 @@ body {
     background-color: #870d23;
 }
 
+
+/* Forms */
+.generalForm {
+    width: 350px;
+}
+
 /* Footer */
 .footer {
     background-color: #A6192E;

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Réservation de billets - Rouge et Or</title>
+
+    <link rel="icon" href="../img/Logo_RougeEtOr.ico">
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../js/script.js" defer></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">Rouge et Or</div>
+        <nav class="navbar">
+            <a href="../index.html">Accueil</a>
+            <a href="../about-us.html">À propos</a>
+            <a href="#">Réserver</a>
+            <div>
+                <a href="../login.html" style="vertical-align: center;">
+                <img src="../img/loginImg.png" alt="" style="width: 30px; height: 30px;"> Réserver une place
+                </a>
+            </div>
+            
+        </nav>
+    </header>
+    <section class="hero">
+        <h1>Selectionner un siège</h1>
+            <p>Numero de siege</p>
+            <select name="numero" id="numero" class="generalForm" style="font-size: 30px; padding-top: 20px;">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+            </select>
+            <p>
+                Section
+            </p>
+            <br>
+            <select name="section" id="section" class="generalForm" style="font-size: 30px; margin-bottom: 30px">
+                <option value="A">A</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+                <option value="D">D</option>
+            </select>
+        </form>
+        <p style="font-size: 15px;">Prix estimé : (récuperer le prix dans la db)</p>
+
+        <input type="submit" value="" style="font-size: 15px; margin-top: 10px; margin-bottom: 10px; padding: 10px; border-radius: 10px;">
+        <br>
+        <a id="ul-buy-tickets-btn" class="cta-button">Acheter</a>
+        
+
+    </section>
+
+</body>
+
+
+<footer class="footer">
+    <p>&copy; 2024 Université Laval - Tous droits réservés</p>
+</footer>

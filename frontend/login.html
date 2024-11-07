@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Réservation de billets - Rouge et Or</title>
+    <title>Connexion</title>
 
     <link rel="icon" href="img/Logo_RougeEtOr.ico">
     <link rel="stylesheet" href="css/style.css">
@@ -17,25 +18,32 @@
     <header class="header">
         <div class="logo">Rouge et Or</div>
         <nav class="navbar">
-            <a href="#">Accueil</a>
-            <a href="about-us.html">À propos</a>
+            <a href="index.html">Accueil</a>
+            <a href="/about-us.html">À propos</a>
             <a href="account/book.html">Réserver</a>
             <div>
                 <a href="login.html" style="vertical-align: center;">
                 <img src="img/loginImg.png" alt="" style="width: 30px; height: 30px;"> Connexion
                 </a>
             </div>
-            
         </nav>
     </header>
-
     <section class="hero">
-        <h1>Bienvenue sur le site de réservation du Rouge et Or de l'Université Laval</h1>
-        <a href="account/book.html" id="ul-buy-tickets-page" class="cta-button">Acheter des billets</a>
+        <h1>Connexion</h1>
+        <h3>Veuillez remplir vos informations d'identification</h3>
+        <form action="submit" style="background-color: antiquewhite; margin-top: 10px; padding-top: 10px;">
+            <p>Email (ULAVAL)</p>
+            <input type="email" id="emailUL" size="50px">
+            <p>
+                Mot de passe
+            </p>
+            <input type="password" name="password" id="passWD" size="50px">
+            <br>
+            <input type="submit" value="Connexion" style="font-size: 15px; margin-top: 10px; margin-bottom: 10px; padding: 10px; border-radius: 10px;">
+        </form>
+        <p style="font-size: 15px;">Vous n'avez pas de compte ? <a href="signup.html">Créer un compte</a></p>
     </section>
 
     <footer class="footer">
         <p>&copy; 2024 Université Laval - Tous droits réservés</p>
     </footer>
-</body>
-</html>
