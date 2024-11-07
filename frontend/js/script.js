@@ -1,20 +1,6 @@
 $('#ul-buy-tickets-btn').click(function () {
-
-    const api = '/api/';
-
-    $.ajax({
-        url: api + 'siegesItem',
-        type: 'GET',
-        success: function (data) {
-            
-        },
-    });
-
-    alert("Ticket commandé, merci de votre achat!")
-
-    
+    alert('Le bouton fonctionne')
 });
-
 
 $(document).ready(function () {
     const api = '/api/';
